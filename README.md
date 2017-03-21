@@ -9,5 +9,3 @@ Gutty(TaigaMikami)のポートフォリオ
 ## Author
 
 by TaigaMikami
-
-
