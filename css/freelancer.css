@@ -482,3 +482,9 @@ fieldset[disabled] .btn-success.active {
 div#maincontent {
   outline: none;
 }
+
+.hobby{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
