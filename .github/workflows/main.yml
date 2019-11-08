@@ -3,12 +3,12 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - source
 
 jobs:
   build:
     name: Flutter build and deploy
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
 
     steps:
     - uses: actions/checkout@master
@@ -17,12 +17,17 @@ jobs:
     - uses: subosito/flutter-action@v1
       with:
         channel: 'dev'
+
     - name: Run a flutter build and deploy
       run: |
         flutter config --enable-web
         flutter pub get
         flutter build web
-    - name: Copy build dir
-      run: cp -r ./build/web/* ./
-      working-directory: ./
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./build/web
 
