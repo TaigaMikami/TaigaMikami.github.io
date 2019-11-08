@@ -32172,7 +32172,7 @@ u=u[3]
 return Math.sqrt(t*t+s*s+r*r+u*u)}}
 F.yH.prototype={
 L:function(a){var u="TaigaMikami's Portofolio",t=null,s=L.KU(u,t)
-return new S.mV(new M.nU(new E.lp(s,new P.a8(1/0,56),t),new T.fN(C.a0,t,t,L.KU("Coming Soon",t),t),t),u,!1,t)}};(function aliases(){var u=H.md.prototype
+return new S.mV(new M.nU(new E.lp(s,new P.a8(1/0,56),t),new T.fN(C.a0,t,t,L.KU("Hello World!",t),t),t),u,!1,t)}};(function aliases(){var u=H.md.prototype
 u.vz=u.t
 u=H.nT.prototype
 u.wi=u.ak
