@@ -1,0 +1,25 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Say start a build
+      run: echo flutter build web
+    - uses: subosito/flutter-action@v1
+      with:
+        channel: 'stable'
+    - name: Run a flutter build and deploy
+      run: |
+        flutter pub get
+        flutter test
+        flutter build web
+    - name: Copy build dir
+      run: cp ./build/web/* ./
+      working-directory: ./
+  
