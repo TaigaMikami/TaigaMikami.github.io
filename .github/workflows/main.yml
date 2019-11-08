@@ -1,10 +1,13 @@
-name: Deploy
+name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
-
+    name: Flutter build and deploy
     runs-on: ubuntu-latest
 
     steps:
@@ -16,6 +19,7 @@ jobs:
         channel: 'stable'
     - name: Run a flutter build and deploy
       run: |
+        flutter config --enable-web
         flutter pub get
         flutter build web
     - name: Copy build dir
