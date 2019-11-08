@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           title: Text("TaigaMikami's Portofolio"),
         ),
         body: Center(
-          child: Text("Coming Soon"),
+          child: Text("Hello World!"),
         ),
       ),
     );
