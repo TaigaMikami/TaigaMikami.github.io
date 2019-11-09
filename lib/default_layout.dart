@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_flutter/pages/home_page.dart';
+import 'package:portfolio_flutter/pages/works_page.dart';
 
 class DefaultLayout extends StatefulWidget {
 
@@ -38,7 +39,7 @@ class _DefaultLayoutState extends State<DefaultLayout> with SingleTickerProvider
         controller: _tabController,
         children: <Widget>[
           HomePage(),
-          HomePage(),
+          WorksPage(),
           HomePage(),
         ],
       ),
