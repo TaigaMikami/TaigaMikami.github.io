@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_flutter/default_layout.dart';
 
 void main() {
   runApp(new MyApp());
@@ -10,14 +11,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: "TaigaMikami's Portofolio",
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("TaigaMikami's Portofolio"),
-        ),
-        body: Center(
-          child: Text("Hello World!"),
-        ),
-      ),
+      home: new DefaultLayout(),
     );
   }
 }
