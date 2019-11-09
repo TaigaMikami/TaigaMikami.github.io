@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_flutter/styleguide/image_asset.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Container(
-                child: Image.asset('assets/images/gutty.png'),
+                child: Image.asset(gutty),
               ),
               Container(
                 margin: EdgeInsets.only(top: 30),
