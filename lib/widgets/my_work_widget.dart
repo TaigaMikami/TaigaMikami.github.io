@@ -13,31 +13,8 @@ class MyWorkWidget extends StatelessWidget {
         children: <Widget>[
           Padding(
             padding: const EdgeInsets.only(bottom: 20.0),
-            child: ClipRRect(borderRadius: BorderRadius.all(Radius.circular(10)), child: Image.asset(imagePath)),
+            child: ClipRRect(borderRadius: BorderRadius.all(Radius.circular(10)), child: Image.asset(imagePath))
           ),
-          Positioned(
-            bottom: 10,
-            left: 20,
-            right: 20,
-            child: InkWell(
-              onTap: null,
-              child: Material(
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-                elevation: 4,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
-                  ),
-                  child: Text(
-                    "Play",
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ),
-            ),
-          )
         ],
       ),
     );
