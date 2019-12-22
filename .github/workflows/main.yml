@@ -16,7 +16,7 @@ jobs:
       run: echo flutter build web
     - uses: subosito/flutter-action@v1
       with:
-        channel: 'dev'
+        channel: 'beta'
 
     - name: Run a flutter build and deploy
       run: |
